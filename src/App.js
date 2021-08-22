@@ -1,4 +1,5 @@
 import LinkList from "./components/link/linklist";
+import Form from "./components/form/form";
 import { linkContext } from "./context";
 export default function App() {
   //I didn't get a response for my gql issue, so I'm using context to display dynamic data
@@ -11,6 +12,7 @@ export default function App() {
           { link: "http://bing.com", slug: "oiaasdkj" }
         ]}
       >
+        <Form />
         <LinkList />
       </linkContext.Provider>
     </div>

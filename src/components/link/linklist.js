@@ -9,7 +9,7 @@ const LinkList = (props) => {
     <>
       <ul>
         {links.map((link, idx) => (
-          <li key={idx} className="py-2 mx-auto px-4 w-80">
+          <li key={idx} className="py-2 mx-auto px-4 max-w-2xl ">
             <Link link={link.link} slug={link.slug} />
           </li>
         ))}
